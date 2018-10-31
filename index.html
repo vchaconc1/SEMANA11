@@ -74,6 +74,38 @@ http://www.templatemo.com/tm-496-pipeline
                     <div id="about2" class="tm-content-box">
                         <div class="tm-box-pad tm-bordered-box">
                             
+                            <h2 class="tm-section-title">CODIGO ARDUINO </h2>
+                            <p>Para la configuracion de nuestro prototipo se uso el siguiente codigo</p>
+                            <p align="center">#include <Servo.h> </p>
+                            <p align="center">// Declaramos la variable para controlar el servo</p>
+                            <p align="center">Servo servomotor;</p>
+                            <p align="center">void setup() {</p>
+                            <p align="center">// Iniciamos el monitor serie para mostrar el resultado</p>
+                            <p align="center">Serial.begin(9600);</p>
+ 
+                           <p align="center">// Iniciamos el servo para que empiece a trabajar con el pin 9 y declaramos a nuestro switch con el pin 8</p>
+                            <p align="center">servoMotor.attach(9);</p>
+                            <p align="center">#define  button 8</p>
+                            <p align="center">}</p>
+ 
+                            <p align="center">void loop() {</p>
+  
+                            <p align="center">int buttonstate = digitalRead(button);</p>
+                           <p align="center">// Empezamos desde la posicion con el switch apagado 0º</p>
+                            <p align="center">if(buttonstate == HIGH ) {</p>
+                            <p align="center">servoMotor.write(0);</p>
+                            <p align="center">// Esperamos 2 segundo</p>
+                            <p align="center">delay(2000);</p>
+                            <p align="center">}</p>
+  
+                            <p align="center">if(buttonstate == LOW) {</p>
+                           <p align="center">// Al accionar el Swicth desplazamos a la posición 180º</p>
+                            <p align="center">servoMotor.write(180);</p>
+                            <p align="center">// Esperamos 2 segundo</p>
+                            <p align="center">delay(2000);</p>
+                            <p align="center">}</p>
+                            <p align="center">}</p>
+                            <p> Extraido de Programacion de Arduino: Julia K. Mars (2016) y Luis Del Valle Hernández (2016) </p>
                             <h2 class="tm-section-title">CORRECIONES DE PROTOTIPO </h2>
                             
                             <p>PRUEBA1 </p>
@@ -97,6 +129,8 @@ http://www.templatemo.com/tm-496-pipeline
                         <div class="tm-box-pad tm-bordered-box">
                             <h2 class="tm-section-title">REFERENCIAS</h2>
                             <p>Creación original. Inventor 2017. Viviana Chacón C.</p>
+                            <p>K. Mars, J. K. M. Julia. (2016, 28 noviembre). Código para giro de servomotor con interruptores (Arduino). Recuperado 24 octubre, 2018, de https://marsquestionsaboutlife.wordpress.com/2014/11/28/codigo-para-giro-de-servomotor-con-interruptores-arduino/ </p>
+                            <p>Del Valle Hernández, L. V. H. Luis. (2016, 20 octubre). Servomotor con Arduino tutorial de programación paso a paso. Recuperado 24 octubre, 2018, de https://programarfacil.com/tutoriales/fragmentos/servomotor-con-arduino/ </p>
                             <p>Programa facil (s/f).Servomotor con Arduino. Recuperado de: https://programarfacil.com/tutoriales/fragmentos/servomotor-con-arduino/</p>
                         </div>
                     </div>
