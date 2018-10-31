@@ -116,6 +116,12 @@ http://www.templatemo.com/tm-496-pipeline
                             
                             <p>PIEZAS (Corrección)</p>
                             <img src="dedal mejorado.JPG" >
+                            
+                            <p>NUEVO SERVOMOTOR MG946R </p>
+                            <p>Hemos escogido el nuevo servomotor MG946R porque el anterior que teníamos que era el 9G no tenía el suficiente torque ya que solo era de 1.6kg-cm (mindsensors.com,2018) lo cual era muy poco para la fuerza de un dedo y la resistencia que opone el tubo de vinilo y el futuro polímero que le pondremos al prototipo, pero este nuevo servomotor cuenta con un torque de hasta 14kg-cm (naylamp, 2018). Además con el 9G tendríamos que poner dos servomotores mientras que con el nuevo servomotor nos hará falta solo uno. </p>
+                            <p>El único inconveniente que le hemos encontrado es que para que llegue al máximo de su torque utiliza un voltaje de 6.0v (naylamp, 2018), y el mini arduino con el que estamos trabajando solo trabaja con 5v, lo que nos llevó a buscar método de alimentación externa para el nuevo servomotor. </p>
+                            <p>Existen  dos tipos de fuentes; fuentes conmutadas y las fuentes lineales, notando que estas últimas tenían un bajo rendimiento  y que a pesar de ser baratas, serían  poco eficaces en el uso de trabajos a baterías y pensando en la complejidad de nuestro trabajo llegamos a la conclusión de que utilizaremos fuentes conmutadas (Módulo Regulador Step Down LM2596 ) esta  nos proveerá   de un 80% de rendimiento, y además posee un potenciómetro el cual nos permitirá regular la tensión de salida que por obvias razones será menor que la de 
+entrada. (prometec.net ,2016)Es así como a partir de una batería de 8v regularemos hasta obtener el voltaje necesario para alimentar  nuestros servos (aproximadamente 6v por servo).(forum.arduino.com, 2016) </p>
                           </div>
                     </div>
                     
@@ -132,6 +138,12 @@ http://www.templatemo.com/tm-496-pipeline
                             <p>K. Mars, J. K. M. Julia. (2016, 28 noviembre). Código para giro de servomotor con interruptores (Arduino). Recuperado 24 octubre, 2018, de https://marsquestionsaboutlife.wordpress.com/2014/11/28/codigo-para-giro-de-servomotor-con-interruptores-arduino/ </p>
                             <p>Del Valle Hernández, L. V. H. Luis. (2016, 20 octubre). Servomotor con Arduino tutorial de programación paso a paso. Recuperado 24 octubre, 2018, de https://programarfacil.com/tutoriales/fragmentos/servomotor-con-arduino/ </p>
                             <p>Programa facil (s/f).Servomotor con Arduino. Recuperado de: https://programarfacil.com/tutoriales/fragmentos/servomotor-con-arduino/</p>
+                            <p>(forum.arduino.com, 2016).Recuperado de: https://forum.arduino.cc/index.php?topic=336454.0 </p>
+                            <p>Prometec, 2016. Recuperado de: https://www.prometec.net/fuentes-step-down/ </p>
+                            <p>Naylamp, 2018.Recuperado de: https://naylampmechatronics.com/servomotores/23-servo-mg946r-13kg.html</p>
+                            <p>mindsensors.com,2018. Recuperado de: http://www.mindsensors.com/arduino-accessories/143-9-grams-servo-motor </p>
+
+
                         </div>
                     </div>
 
